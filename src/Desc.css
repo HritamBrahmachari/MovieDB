@@ -1,0 +1,172 @@
+.show-details-container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  font-family: Arial, sans-serif;
+  color: #333;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  position: relative;
+  top: 15vh;
+}
+
+.show-header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
+.show-header h1 {
+  font-size: 2.5em;
+  margin: 0 0 10px 0;
+  color: #2c3e50;
+}
+
+.rating {
+  font-size: 1.2em;
+  font-weight: bold;
+  color: #e74c3c;
+}
+
+.show-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.show-image {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.show-info {
+  width: 100%;
+}
+
+.show-info p {
+  font-size: 1.1em;
+  line-height: 1.6;
+  margin-bottom: 10px;
+}
+
+.show-summary {
+  font-size: 1em;
+  line-height: 1.6;
+  color: #555;
+  max-height: 300px;
+  overflow-y: auto;
+  padding-right: 10px;
+}
+
+.back-button {
+  display: inline-block;
+  padding: 10px 20px;
+  background-color: #3498db;
+  color: white;
+  text-decoration: none;
+  border-radius: 5px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+  border: none;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.back-button:hover {
+  background-color: #2980b9;
+}
+
+.error-container {
+  text-align: center;
+  padding: 40px;
+  background-color: #f8d7da;
+  border-radius: 8px;
+  color: #721c24;
+}
+
+.error-container p {
+  font-size: 1.2em;
+  margin-bottom: 20px;
+}
+
+/* Responsive design for tablets and large phones */
+@media (max-width: 768px) {
+  .show-details-container {
+      top: 10vh;
+      padding: 30px 15px;
+  }
+
+  .show-header h1 {
+      font-size: 2em;
+  }
+
+  .show-image {
+      max-width: 250px;
+  }
+}
+
+/* Responsive design for small phones */
+@media (max-width: 480px) {
+  .show-details-container {
+      top: 5vh;
+      padding: 20px 10px;
+  }
+
+  .show-header h1 {
+      font-size: 1.8em;
+  }
+
+  .rating {
+      font-size: 1em;
+  }
+
+  .show-image {
+      max-width: 200px;
+  }
+
+  .show-info p {
+      font-size: 1em;
+  }
+
+  .show-summary {
+      font-size: 0.9em;
+      max-height: 250px;
+  }
+
+  .back-button {
+      font-size: 0.9em;
+      padding: 8px 16px;
+  }
+}
+
+/* Adjustments for very long summaries */
+@media (min-height: 800px) {
+  .show-summary {
+      max-height: 400px;
+  }
+}
+
+/* Scrollbar styling for webkit browsers */
+.show-summary::-webkit-scrollbar {
+  width: 8px;
+}
+
+.show-summary::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.show-summary::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.show-summary::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}

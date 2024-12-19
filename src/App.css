@@ -1,0 +1,41 @@
+.img {
+    width: 60%;
+    padding: 1%;
+}
+
+.container {
+    width: 50%
+}
+
+h4 {
+    margin-left: 1%;
+}
+
+
+
+h5 {
+    margin-left: 1%;
+
+}
+#intro{
+    font-size: 120%;
+}
+p {
+    padding: 1%;
+    font-size: 90%;
+}
+
+ol{
+    font-size: 150%;
+    font-weight: 600;
+}
+
+#heading{
+
+    display: flex;
+    justify-content: center;
+    padding: 2%;
+  color: rgb(26, 9, 56);
+
+}
+
